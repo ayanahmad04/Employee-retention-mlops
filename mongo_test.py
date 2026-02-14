@@ -2,10 +2,10 @@ from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
 load_dotenv()
-# uri = "mongodb+srv://ayanahmadkhan1165_db_user:ayan123@cluster0.metp2qs.mongodb.net/Proj0?retryWrites=true&w=majority"
+
 DATABASE_NAME = "Proj0"
 COLLECTION_NAME = "Proj0-Data"
-# MONGODB_URL_KEY = 'mongodb+srv://ayanahmadkhan1165_db_user:YSGX2XKWKj1MFsvt@cluster0.metp2qs.mongodb.net/Proj0?retryWrites=true&w=majority'
+# MONGODB_URL_KEY = "MONGODB_URL_KEY"
 
 client = MongoClient(os.getenv('MONGODB_URL_KEY'))
 
